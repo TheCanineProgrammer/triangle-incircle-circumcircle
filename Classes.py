@@ -100,8 +100,8 @@ class Triangle(Line):
     def vertices(self):
         return {"A" : self.P1, "B" : self.P2, "C" : self.P3}
     
-    def save(self):
-        with open("LOG.txt", "w") as log:
+    def save(self, name = "LOG"):
+        with open(name + ".txt", "w") as log:
             log.write(f"A = {self.A}°, B = {self.B}°, C = {self.C}°\n")
             log.write(f"a = {self.a}, b = {self.b}, c = {self.c}\n")
             log.write(f"Area = {self.S}\n")
