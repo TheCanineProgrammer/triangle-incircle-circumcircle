@@ -36,7 +36,7 @@ Tri = Triangle(A, B, C)  # where A, B, C are tuples like (x, y)
 You can save all the calculated triangle information to a log file by calling:
 
 ```python
-tri.save()
+Tri.save()
 ```
 
 ## Sample `LOG.txt` content
